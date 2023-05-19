@@ -1,0 +1,11 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true  # 是否用 IP 地址在 Eureka Server 中进行注册

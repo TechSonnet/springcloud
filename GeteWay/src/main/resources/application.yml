@@ -1,0 +1,12 @@
+server:
+  port: 8013
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      deafultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    provider: /p/** # 将 provider 映射成 p
